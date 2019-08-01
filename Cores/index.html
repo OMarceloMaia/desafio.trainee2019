@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cores</title>
+</head>
+<style>
+    .box {
+        height: 500px;
+        width: 500px;
+        border: 5px solid #000000;
+    }
+    .button{
+       justify-content: left;
+        display: flex;
+        flex-direction: line;
+    } 
+</style>
+
+<body>
+    <div class="box" id="box"></div>
+
+    <div class="formu" id="formu">
+        <div class="button" id="multButton">
+            <button type="button" id="red" onclick="funcaoRed()">Vermelho</button><br>
+            <button type="button" id="green" onclick="funcaoGreen()">Verde</button><br>
+            <button type="button" id="blue" onclick="funcaoBlue()">Azul</button><br>
+        </div>
+    </div>
+
+    <script>
+
+        function funcaoRed() {
+            document.getElementById("box").style.backgroundColor = "#ff0000"
+        }
+        function funcaoGreen() {
+            document.getElementById("box").style.backgroundColor = "#00ff00"
+        }
+        function funcaoBlue() {
+            document.getElementById("box").style.backgroundColor = "#0000ff"
+        }
+
+    </script>
+</body>
+
+</html>

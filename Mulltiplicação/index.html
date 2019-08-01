@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multiplicação</title>
+</head>
+<body>
+        <div class = "formu" id = "formu">
+                <form>
+                    <h1>Multiplicação</h1><br>
+                    Primeiro Número:
+                    <input type="number" name="n1" id="n1"><br>
+                    Segundo Número:
+                    <input type="number" name="n2" id="n2"><br>
+                </form>
+                <div class="button" id="multButton">
+                    <button type="button" id="button" onclick="minhaFuncao()">Multiplicar</button><br>
+                </div>
+                Resultado:  <a id="result"></a>
+        </div>
+
+    <script>
+ 
+        function minhaFuncao(){
+
+            var n1 = document.getElementById('n1').value
+            var n2 = document.getElementById('n2').value
+
+            if(n1 % 1 != 0 || n2 % 1 != 0){window.alert("Apenas números inteiros, atualize a página e coloque novos valores")}
+            else{document.getElementById("result").textContent = n1 * n2}
+        }
+
+    </script>
+</body>
+</html>
